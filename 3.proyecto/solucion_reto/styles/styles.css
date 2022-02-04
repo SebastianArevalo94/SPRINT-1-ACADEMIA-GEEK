@@ -1,0 +1,20 @@
+#alert {
+    color: red; display: none; text-align: center;
+}
+
+#tan {
+    display: none;
+}
+
+#error {
+    display: none;
+}
+
+#error_title {
+    /* text-align: center; */
+    color: red;
+}
+
+#nav__txt {
+    font-size: 17px;
+}

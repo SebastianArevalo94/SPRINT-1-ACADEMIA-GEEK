@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="./styles/main.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="main row justify-content-center" style="margin-top: 16vh;">
+		<div class="col-sm-4">
+			<header class="header">
+				<h1 id="title" class="text-center">Survey Form</h1>
+				<p id="description" class="description text-center">
+					Thank you for taking the time to fill this form
+				</p>
+			</header>
+
+			<form id="survey-form">
+				<div class="form-group">
+					<label id="name-label" for="name">Type your name:</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="My name is..." required>
+				</div>
+				<div class="form-group">
+					<label id="email-label" for="email">Type your Email: </label>
+					<input class="form-control" placeholder="My email is..." required id="email" />
+					<span id="result"></span>
+				</div>
+				<div class="form-group">
+					<label id="age-label" for="age">Type your Age</label>
+					<input type="number" id="age" min="18" max="80" class="form-control"
+						placeholder="I'm ... years old">
+				<span id="result1"></span>
+				</div>
+				<div class="form-group">
+					<p>Which phrase do you idenify with the most?</p>
+					<select id="name" name="name" class="form-control" required>
+						<option disabled="" selected="" value="">Select a phrase</option>
+						<option value="1">I'm a person who defines the law of my conduct</option>
+						<option value="2">I prefer to follow other people's orders and obey</option>
+					</select>
+				</div>
+
+				<div>
+					<p>Select your region:</p>
+					<input type="radio" id="America" name="America" value="America">
+					<label for="America">America</label><br>
+					<input type="radio" id="Africa" name="Africa" value="Africa">
+					<label for="Africa">Africa</label><br>
+					<input type="radio" id="Europe" name="Europe" value="Europe">
+					<label for="Europe">Europe</label><br>
+					<input type="radio" id="Oceania" name="Oceania" value="Oceania">
+					<label for="Oceania">Oceania</label>
+				</div>
+
+				<div class="form-group">
+					<p>
+						Who do you live with?
+					</p>
+					<select id="most-like" name="mostLike" class="form-control" required="">
+						<option disabled="" selected="" value="">Select an option</option>
+						<option value="parents">My parents</option>
+						<option value="wife">My wife only</option>
+						<option value="openSource">My wife and children</option>
+						<option value="liveAlone">I'm live alone</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<p>
+						Select the topics that sounds interesting to you
+					</p>
+
+					<div class="label-container">
+						<label>
+							<input name="Programming" value="Programming" type="checkbox"
+								class="input-checkbox">Programming
+						</label><br>
+
+						<label>
+							<input name="Social Networks" value="Social Networks" type="checkbox"
+								class="input-checkbox">Social Networks
+						</label><br>
+
+						<label>
+							<input name="Marketing" value="Marketing" type="checkbox" class="input-checkbox">Marketing
+						</label><br>
+
+						<label>
+							<input name="Desing" value="Desing" type="checkbox" class="input-checkbox">Desing
+						</label><br>
+
+						<label>
+							<input name="Sofware develop" value="Sofware develop" type="checkbox"
+								class="input-checkbox">Sofware develop
+						</label><br>
+
+					</div>
+
+				</div>
+
+				<div class="form-group">
+					<label for="textArea">Example textarea</label>
+					<textarea class="form-control" id="textArea" rows="3"></textarea>
+				</div>
+
+				<button class="btn btn-primary" type="submit" id="submit" class="submit-button">
+					Submit
+				</button>
+
+			</form>
+		</div>
+	</div>
+	<script src="./scripts/script.js"></script>
+</body>
+
+</html>
